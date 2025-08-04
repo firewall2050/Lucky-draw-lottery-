@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Draw Lottery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9ecef;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        h1 {
+            color: #28a745;
+            font-size: 2.5em;
+        }
+        h2 {
+            color: #007bff;
+            font-size: 1.5em;
+        }
+        .prizes {
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Lucky Draw Lottery</h1>
+    <h2>Win Amazing Prizes!</h2>
+    <div class="prizes">
+        <p>1st Prize: ₹5,00,000</p>
+        <p>2nd Prize: ₹2,00,000</p>
+        <p>3rd Prize: ₹50,000</p>
+    </div>
+    <p>Buy your lottery ticket for just ₹20!</p>
+    <form id="lotteryForm" action="https://rzp.io/rzp/r9TTds0" method="GET" target="_blank">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" required>
+        </div>
+        <button type="submit">Pay Now</button>
+    </form>
+    <p>After payment, you will receive your ticket number via SMS.</p>
+</div>
+
+<footer>
+    <p>Thank you for participating!</p>
+</footer>
+
+<script>
+    document.getElementById('lotteryForm').addEventListener('submit', function(event) {
+        // Here you can add code to save the data before redirecting to payment
+        // For demonstration, we will just alert the user
+        alert('Thank you for participating! You will be redirected to the payment page.');
+    });
+</script>
+
+</body>
+</html>
